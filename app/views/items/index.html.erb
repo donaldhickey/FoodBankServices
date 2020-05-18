@@ -1,0 +1,44 @@
+<!-- <p id="notice">...<%= notice %></p>-->
+
+ <div id="itemsContainer">
+  
+  <h1>Items</h1>
+  <% if session[:login] == 1 %>    
+     <p><%= link_to 'Add Item', new_item_path, :class =>"button", :role=>"button" %>
+      <%= link_to 'Add Category', new_category_path, :class =>"button", :role=>"button"  %></p>
+     <% end %>
+     
+      <% @items.each do |item| %>
+      <div class="itemhols">
+
+       <h1><%= item.title %></h1>
+       
+       <%= link_to (image_tag item.image_url, :class => "itemholsIm"), item %>
+        <p><%= item.description %></p>
+       <p>Price <%= number_to_currency(item.price, :unit => "€") %>
+       <br>
+       Food Category: <%= item.category %>
+        <br>
+       Food Item Brand: <%= item.brand %></p>
+       
+       <p>
+        
+         <%= link_to 'Show',  item, :class => "button", :role => "button" %>
+         <a href="/cart/<%= item.id %>" class="button">Add To Cart</a>
+
+<br>
+        
+<% if session[:login] == 1 %>    
+
+<%= link_to 'Edit', edit_item_path(item), :class =>"button", :role=>"button" %>
+<%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' }, :class =>"button", :role=>"button" %>
+<% end %>
+
+       </p>
+
+      </div>
+    <% end %>
+
+
+
+</div>

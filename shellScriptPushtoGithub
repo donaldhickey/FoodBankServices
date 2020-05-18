@@ -1,0 +1,5 @@
+echo Please name this commit
+read varname
+git add .
+git commit -m varname
+git push origin SGBranch

@@ -1,0 +1,24 @@
+<% provide(:title, "Home") %>
+
+
+<div class="mainCont">
+<%= image_tag("Selection_of_food_items.jpg", alt: "Welcome Logo", :class => "welcomeIm") %>    
+    
+<h4>Free food for those who need it!</h4>
+
+<h4>Please donate by selecting a much needed item from one of these categories..</h4>
+
+<p>
+
+<%=render 'layouts/categories'%>
+<h2>Items </h2>
+<h4>..or pick one of the most popular items below</h4>
+
+<%=render 'layouts/popular'%>
+
+
+
+    </div>
+
+
+

@@ -1,0 +1,214 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.catalog {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.headSec {
+    min-height:10px;
+    background-color: #0f9004;
+    width: 100%;
+    margin-bottom:10px;
+    overflow: auto;
+
+}
+
+.headSec h1 {
+    color: #F4D412;
+    font-size: 50px;
+    padding: 15px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4FAB15;
+    font-size: 15px;
+    color:#F7F9Fb;
+
+}
+
+li {float:left;}
+
+li a {
+    display: block;
+    color:#F7F9Fb ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.mainCont {
+
+    margin: auto;
+    width:80%;
+   /* border: 3px solid #8DF43D;*/
+    padding: 10px;
+    text-align: center;
+}
+
+.welcomeIm {width: 50%;}
+
+
+.foot {
+    min-height: 80px;
+    background-color: #2D8D29;
+    width: 100%;
+    margin-top: 10px;
+    overflow: auto;
+
+
+}
+
+.container {
+      background-color:#ffffff;
+      width: 100%;
+      min-height: 700px;
+}
+#itemsContainer {
+    width: 100%;
+    text-align: center;
+    
+}
+#itemsContainer h1 {
+   display: block;
+    color: #013220;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+    
+}
+.itemhols {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 22%;
+    padding:10px;
+    min-height: 300px;
+    //border: 1px solid lightgray;
+    border-radius: 7px;
+   
+}
+.itemhols h1 {
+   display: block;
+    color: #2D8D29;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.itemhols p {
+   display: block;
+    color: #2D8D29;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px
+    
+}
+.itemholsIm {
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+    
+}
+.button {
+    background-color: #4FAB15;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.buttonNewItem {
+    background-color: #4FAB15;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #0f9004;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #0f9004;
+}
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
